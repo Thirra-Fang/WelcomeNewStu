@@ -4688,7 +4688,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: b6b712b95df5917488bbee9f0c1172d2, type: 3}
-    m_FontSize: 60
+    m_FontSize: 70
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -4699,7 +4699,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u5982\u679C\u6709\u6392\u653E\u7684\u8BDD\uFF0C\u540C\u5B66\u662F\u600E\u6837\u4ECE\u5BB6\u5230\u5B66\u6821\u7684\u5462"
+  m_Text: "\u540C\u5B66\u662F\u600E\u6837\u4ECE\u5BB6\u5230\u5B66\u6821\u7684\u5462"
 --- !u!222 &1668386555
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5575,8 +5575,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 410, y: -0.0000085831}
-  m_SizeDelta: {x: 456.5536, y: 598.6533}
+  m_AnchoredPosition: {x: 401, y: 9.2418}
+  m_SizeDelta: {x: 453.1292, y: 417.1635}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1914845304
 MonoBehaviour:
