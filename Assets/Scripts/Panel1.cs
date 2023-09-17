@@ -25,7 +25,7 @@ public class Panel1 : MonoBehaviour
             }
             else
             {
-                mainCanva.ChangePanel();
+                mainCanva.changePanelTo(4);
             }
         }
     }

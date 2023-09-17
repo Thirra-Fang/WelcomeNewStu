@@ -80,26 +80,25 @@ public class MainCanvas : MonoBehaviour
             if(wayToWuHan == (int)ETraffic.car)
             {
                 CEToWuhan = distanceToWuHan/100*0.024f;
-                distanceToHust = 0;
-                resultTexts[1].text = resultTexts[1].text.Replace("<distance>", "ºöÂÔ");
+                //distanceToHust = 0;
+                //resultTexts[1].text = resultTexts[1].text.Replace("<distance>", "ºöÂÔ");
             }
             else if(wayToWuHan == (int)ETraffic.train)
             {
                 CEToWuhan = distanceToWuHan / 100 * 0.0011f;
-                distanceToHust = 18;
-                resultTexts[1].text = resultTexts[1].text.Replace("<distance>", distanceToHust.ToString("0.00"));
+                //distanceToHust = 18;
+                //resultTexts[1].text = resultTexts[1].text.Replace("<distance>", distanceToHust.ToString("0.00"));
             }
             else if(wayToWuHan == (int)ETraffic.air)
             {
                 CEToWuhan = distanceToWuHan / 100 * 0.014f;
-                distanceToHust = 48;
-                resultTexts[1].text = resultTexts[1].text.Replace("<distance>", distanceToHust.ToString("0.00"));
+                //distanceToHust = 48;
+                //resultTexts[1].text = resultTexts[1].text.Replace("<distance>", distanceToHust.ToString("0.00"));
             }
         }
         else
         {
-            resultTexts[0].text = resultTexts[0].text.Replace("<distance>", distanceToWuHan.ToString("0.00"));
-            resultTexts[1].text = resultTexts[1].text.Replace("<distance>", distanceToHust.ToString("0.00"));
+            resultTexts[3].text = resultTexts[3].text.Replace("<distance>", distanceToHust.ToString("0.00"));
         }
 
         if (wayToHust == (int)ETraffic.car)
@@ -117,6 +116,7 @@ public class MainCanvas : MonoBehaviour
         CEAll = CEToHust + CEToWuhan;
 
         resultTexts[2].text = resultTexts[2].text.Replace("<distance>", CEAll.ToString());
+        resultTexts[4].text = resultTexts[2].text.Replace("<distance>", CEAll.ToString());
         CETexts[0].text = CETexts[0].text.Replace("<amount>", (CEAll / 0.024 * 100).ToString("0.00"));
         CETexts[1].text = CETexts[1].text.Replace("<amount>", (CEAll / 0.005).ToString("0.00"));
         CETexts[2].text = CETexts[2].text.Replace("<amount>", (CEAll / 0.006).ToString("0.00"));
